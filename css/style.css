@@ -56,7 +56,122 @@ body {
   font-family: sans-serif;
   font-weight: 400;
   height: 100vh;
+  /* background-color: #eee; */
   /* width: 100vw; */
+}
+
+.main-nav {
+  background-color: #fff5f5;
+
+  padding: 2rem;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  /* position: fixed; */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 7rem;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.home-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.home-icon {
+  width: 4rem;
+}
+
+.section-hero {
+  height: 80vh;
+
+  background: linear-gradient(to bottom, #fff5f5, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+.hero-content {
+  display: flex;
+  gap: 3rem;
+
+  margin: 0 13rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  gap: 5rem;
+
+  font-size: 2.4rem;
+}
+
+.hero-text h2 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.link-cta {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ff922b;
+  align-self: center;
+
+  margin-top: 3rem;
+
+  height: 7rem;
+  width: 33rem;
+
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+
+  font-size: 3.2rem;
+  border-radius: 7px;
+
+  transition: 0.3s;
+}
+
+.link-cta:hover {
+  background-color: #fd7e14;
+  /* border: 2px solid #51cf66; */
+  transform: scale(1.1);
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img--profile {
+  width: 50rem;
+  border-radius: 10px;
 }
 
 .margin-top {
@@ -86,7 +201,7 @@ body {
 }
 
 .section-projects {
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
   /* display: flex;
   justify-content: center;
@@ -216,6 +331,7 @@ body {
 .link-play:hover {
   background-color: #37b24d;
   border: 2px solid #37b24d;
+  transform: scale(1.1);
 }
 
 .link-github {
@@ -226,6 +342,7 @@ body {
 .link-github:hover {
   background-color: #aaa;
   border: 2px solid #aaa;
+  transform: scale(1.1);
 }
 
 .tags {
@@ -283,6 +400,45 @@ body {
   background-color: #f0db4f;
 
   color: #323330;
+}
+
+.aboutme-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutme-link {
+  text-decoration: none;
+  color: #000;
+  background-color: #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 7rem;
+  height: 7rem;
+  border-radius: 7px;
+}
+
+.aboutme-link ion-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-top: solid 1px #ddd;
+
+  background: linear-gradient(to top, #fff5f5, #fff);
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
 /* .section-hero {
