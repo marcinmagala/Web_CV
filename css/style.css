@@ -446,7 +446,7 @@ body {
 }
 
 .cta-heading {
-  grid-column: 1/ -1;
+  /* grid-column: 1/ -1; */
   justify-self: center;
   font-size: 6.8rem;
   font-weight: 700;
@@ -459,17 +459,25 @@ body {
   /* gap: 2rem; */
 }
 
-.cta-form input {
+.cta-form input,
+textarea {
   padding: 3px;
   /* border: 2px solid #fff; */
   border: none;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 
   border-radius: 5px;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: inherit;
 }
 
-.cta-form input:focus-visible {
+textarea {
+  max-width: 70rem;
+  max-height: 10rem;
+}
+
+.cta-form input:focus-visible,
+textarea:focus-visible {
   outline: none;
   outline: 2px solid #748ffc;
   padding: 3px;
@@ -478,6 +486,10 @@ body {
 .cta-form input::placeholder {
   color: #999;
   vertical-align: text-top;
+}
+
+.textarea {
+  text-align: start;
 }
 
 .small-input {
@@ -490,6 +502,9 @@ body {
   height: 9rem;
 
   margin-bottom: 3rem;
+
+  text-align: start;
+  overflow-wrap: break-word;
 }
 
 .form-label {
@@ -505,9 +520,46 @@ body {
 }
 
 .cta-btn {
-  width: 30%;
-  align-self: center;
-  padding-top: 0;
+  width: 90%;
+  /* align-self: center; */
+  font-size: 2.4rem;
+  padding: 1rem;
+
+  border-radius: 40px;
+
+  cursor: pointer;
+
+  background-color: #666;
+  color: #f59f00;
+  border: solid 2px #dbe4ff;
+
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #f0f0f0;
+  border: solid 2px #ddd;
+  color: #f08c00;
+}
+
+.cta-header {
+  /* background-color: #000; */
+  grid-column: 2;
+  grid-row: 1/-1;
+}
+
+.cta-header {
+  /* color: goldenrod;
+  font-size: 7.2rem;
+  font-weight: 700; */
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../img/cta-img.jpg");
+  background-size: cover;
 }
 
 footer {
@@ -522,49 +574,3 @@ footer {
   margin-top: 2rem;
   padding: 2rem;
 }
-
-/* .section-hero {
-  background-color: rgba(51, 51, 51, 0.8);
-  border: 1px solid #ddd;
-  border-radius: 1.2rem;
-  width: 140rem;
-  height: 60rem;
-  padding: 3.2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-text {
-  color: #fff;
-  font-size: 3rem;
-}
-
-.hero-img {
-  width: 3rem;
-  height: 3rem;
-}
-
-.hero-img--profile {
-  width: 3rem;
-  height: 3rem;
-}
-
-.section-edu {
-  background-color: palegoldenrod;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
- 
-
-.section-contact {
-  background-color: palegoldenrod;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
