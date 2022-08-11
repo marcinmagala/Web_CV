@@ -1,0 +1,233 @@
+/* under 1200px 
+
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@media (max-width: 75em) {
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    max-width: 90rem;
+  }
+
+  .hero-text {
+    gap: 2rem;
+    font-size: 1.9rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .shortcut-contact {
+    gap: 4rem;
+    right: 8rem;
+  }
+
+  .aboutme-text {
+    gap: 1.5rem;
+  }
+
+  .aboutme-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .aboutme-text p {
+    font-size: 1.6rem;
+  }
+}
+
+/* under 912px */
+
+@media (max-width: 57em) {
+  .grid-3-cols {
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+  }
+
+  .project-box {
+    width: 100%;
+
+    gap: 0;
+  }
+
+  .project-box--img---logo {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .container {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .cta {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .cta-heading {
+    margin: 2rem 0;
+    padding: 2rem;
+    padding-top: 0;
+    font-size: 6rem;
+  }
+
+  .cta-header {
+    display: none;
+  }
+
+  .con-aboutme {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .main-nav {
+    padding: 2rem 2rem;
+  }
+
+  .nav-links {
+    margin: 0;
+  }
+
+  .nav-links ul {
+    gap: 3rem;
+  }
+
+  .section-aboutme {
+    border-top: dotted 2px #eee;
+  }
+}
+
+/* under 640px */
+
+@media (max-width: 40em) {
+  .container {
+    margin: 0;
+  }
+
+  .hero-img--profile {
+    width: 90%;
+  }
+
+  .section-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta {
+    width: 90%;
+    height: 55rem;
+    padding: 2rem;
+  }
+
+  .cta-heading {
+    font-size: 4.4rem;
+  }
+
+  .shortcut-contact {
+    flex-direction: column;
+    gap: 3rem;
+    right: 3rem;
+    top: 2rem;
+  }
+
+  .small-input {
+    width: 60%;
+  }
+
+  .tohome-btn {
+    right: 5px;
+  }
+
+  .title-section {
+    font-size: 5.2rem;
+    margin-bottom: 5.2rem;
+  }
+}
+
+/* under 448px */
+
+@media (max-width: 28em) {
+  .nav-links ul {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .section-hero {
+    padding-top: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .link-cta {
+    width: 25rem;
+  }
+
+  .section-projects {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .project-box--title {
+    margin-bottom: 1rem;
+  }
+
+  .section-aboutme {
+    margin-bottom: 4rem;
+  }
+
+  .project-box--title {
+    font-size: 2.4rem;
+  }
+
+  .project-attribute {
+    gap: 1rem;
+  }
+
+  .attribute-text {
+    font-size: 1.2rem;
+  }
+
+  .cta-heading {
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+
+  .small-input {
+    width: 90%;
+  }
+
+  .shortcut-contact {
+    display: none;
+  }
+
+  .cta-form {
+    align-items: center;
+  }
+
+  .title-section {
+    font-size: 3.8rem;
+  }
+
+  .link-play {
+    width: 10rem;
+  }
+}

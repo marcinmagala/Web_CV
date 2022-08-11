@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Web_CV</title>
+    <link rel="icon" href="img/desktop-outline.svg">
+
+    <title>M - Przenieś firmę do internetu</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/queries.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -27,7 +29,7 @@
 
   <body>
     <!-- nav -->
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <div class="home-logo">
         <a href="#" class="home-link"
           ><svg
@@ -47,22 +49,26 @@
       </div>
       <div class="nav-links">
         <ul>
-          <a href="#" class="nav-link">Moje projekty</a>
-          <a href="#" class="nav-link">O mnie</a>
-          <a href="#" class="nav-link">Kontakt</a>
+          <a href="#section-projects" class="nav-link">Moje projekty</a>
+          <a href="#section-aboutme" class="nav-link">O mnie</a>
+          <a href="#section-cta" class="nav-link">Kontakt</a>
         </ul>
       </div>
     </nav>
     <main>
+      <a href="#main-nav" class="tohome-btn"
+        ><ion-icon name="chevron-up-outline"></ion-icon
+      ></a>
+
       <!-- section-hero -->
-      <section class="section-hero">
+      <section class="section-hero" id="section-hero">
         <div class="hero-content">
           <div class="hero-text">
             <h2>Cześć! Nazywam się Marcin i jestem web developerem.</h2>
             Zajmuję się tworzeniem stron interenowych oraz aplikacji webowych.
             Na tej stronie znajdziesz moje projekty, lepiej mnie poznasz i
             skontaktujesz się ze mną za pośrednictwem prostego formularza.
-            <a class="link-cta" href="#">Napisz do mnie!</a>
+            <a class="link-cta" href="#section-cta">Napisz do mnie!</a>
           </div>
           <div class="hero-img">
             <img
@@ -74,7 +80,7 @@
         </div>
       </section>
       <!-- section-projects -->
-      <section class="section-projects">
+      <section class="section-projects" id="section-projects">
         <div class="container">
           <span class="title-section">Moje projekty</span>
           <h1 class="subtitle-section">Web applications / mini games</h1>
@@ -527,50 +533,118 @@
               </div>
             </div>
           </div>
+          <div class="project-box">
+            <div class="project-box--img">
+              <img
+                src="img/logo_portfoliopage.png"
+                alt="portfoliopage_logo"
+                class="project-box--img---logo"
+              />
+            </div>
+            <div class="tags">
+              <span class="tag page">PAGE</span>
+              <span class="tag html5">HTML5</span>
+              <span class="tag css3">CSS3</span>
+            </div>
+            <div class="project-box--title">
+              <p>Portfolio page</p>
+            </div>
+            <div class="project-box-content">
+              <div class="project-box--description">
+                <div class="description-title">
+                  <p class="description-title-text">
+                    Strona portfolio.
+                  </p>
+                </div>
+
+                <ul>
+                  <li class="project-attribute">
+                    <ion-icon
+                      class="attribute-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <p class="attribute-text">RWD</p>
+                  </li>
+                  <li class="project-attribute">
+                    <ion-icon
+                      class="attribute-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <p class="attribute-text">Smooth scrooling</p>
+                  </li>
+                  <li class="project-attribute">
+                    <ion-icon
+                      class="attribute-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <p class="attribute-text">Simple contact form</p>
+                  </li>
+                  <li class="project-attribute">
+                    <ion-icon
+                      class="attribute-icon checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <p class="attribute-text">Portfolio page</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-box--links">
+                <a
+                  class="link-play"
+                  href="https://marcinmagalapp.netlify.app"
+                  target="_blank"
+                  >PLAY!</a
+                >
+                <a
+                  class="link-github"
+                  href="https://github.com/marcinmagala/Web_CV.git"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- section-about me -->
-      <section class="section-aboutme">
-        <div class="hero-content">
-          <div class="hero-text">
+      <section class="section-aboutme" id="section-aboutme">
+        <div class="container con-aboutme">
+          <div class="aboutme-text">
             <h2>Cześć! Nazywam się Marcin i jestem web developerem.</h2>
             <p>
-              Zajmuję się tworzeniem stron interenowych oraz aplikacji webowych.
-              Na tej stronie znajdziesz moje projekty, lepiej mnie poznasz i
-              skontaktujesz się ze mną za pośrednictwem prostego formularza.
+              Aktualnie pracuję z technologiami webowymi tworząc strony i
+              aplikacje. W wolnym czasie jeżdżę rowerem oraz biegam, a jednym z
+              moich najbliższych celów jest start w triathlonie. Amatorsko
+              zajmuję się również robieniem zdjęć. <p>Potrzebujesz strony
+              internetowej, która przeniesie Twoją firmę do internetu i otworzy
+              ją na nowe możliowści? Napisz do mnie i zróbmy razem coś
+              wielkiego.</p> 
             </p>
-            <div class="aboutme-links">
-              <a
-                class="aboutme-link"
-                href="https://www.linkedin.com/in/marcin-magala-652566237/"
-                target="_blank"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-              <a
-                class="aboutme-link"
-                href="https://github.com/marcinmagala"
-                target="_blank"
-              >
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </div>
           </div>
           <div class="hero-img">
             <img
-              src="img/zdjecieProfilowe.jpg"
-              alt="profile picture"
+              src="img/aboutme-img.jpg"
+              alt="my hobby picture"
               class="hero-img--profile"
             />
           </div>
         </div>
       </section>
       <!-- section cta -->
-      <section class="section-cta">
+      <section class="section-cta" id="section-cta">
         <div class="container cta">
           <div class="cta-heading">Napisz do mnie!</div>
           <div class="cta-text">
             <form action="#" class="cta-form">
+              <div class="shortcut-contact">
+                <a class="aboutme-link" href="tel:+48501173218">
+                  <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <a class="aboutme-link" href="mailto:marcinmagala@gmail.com">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </div>
               <label for="name" class="form-label required">Imię</label>
               <input
                 type="text"
@@ -616,20 +690,25 @@
       </section>
     </main>
     <footer>
-      <p>© 2022 Marcin Magala.</p>
-      <p>All rights reserved</p>
+      <div class="rights">
+        <p>© 2022 Marcin Magala.</p>
+        <p>All rights reserved</p>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:+48501173218"> +48 501-173-218 </a>
+        <a href="mailto:marcinmagala@gmail.com">marcinmagala@gmail.com </a>
+      </div>
+
       <!-- <div class="cta-links">telephone, mail, linkedin plus ikonki</div> -->
     </footer>
   </body>
 </html>
 
 <!-- 
-  1. Add footer content.
-  2. About me section text.
+
   3. RWD on this site.
   4. RWD bankist app.
-  5. Background hero section.
-  6. Transparent, blur, sticky nav bar. 
+
 
   
 
