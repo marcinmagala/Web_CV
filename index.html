@@ -88,6 +88,9 @@
         <div class="container grid-3-cols">
           <!-- Edge game -->
           <div class="project-box">
+            <div class="mobile">
+              <p>not for mobile devices</p>
+            </div>
             <div class="project-box--img">
               <img
                 src="img/logo_edgegame.png"
@@ -161,7 +164,11 @@
           </div>
           <!-- Space game -->
           <div class="project-box">
-            <div class="project-box--img">
+            <div class="mobile">
+              <p>not for mobile devices</p>
+            </div>
+            <div 
+            class="project-box--img">
               <img
                 src="img/logo_spacegame.png"
                 alt="spacegame_logo"
@@ -636,7 +643,7 @@
         <div class="container cta">
           <div class="cta-heading">Napisz do mnie!</div>
           <div class="cta-text">
-            <form action="#" class="cta-form">
+            <form name="contact-form" netlify class="cta-form">
               <div class="shortcut-contact">
                 <a class="aboutme-link" href="tel:+48501173218">
                   <ion-icon name="call-outline"></ion-icon>
@@ -648,7 +655,7 @@
               <label for="name" class="form-label required">Imię</label>
               <input
                 type="text"
-                name=""
+                name="name"
                 id="name"
                 class="small-input"
                 placeholder="Wpisz imię lub nazwę firmy"
@@ -657,7 +664,7 @@
               <label for="email" class="form-label required">Adres email</label>
               <input
                 type="email"
-                name=""
+                name="email"
                 id="email"
                 class="small-input"
                 placeholder="Wpisz e-mail"
@@ -666,7 +673,7 @@
               <label for="phonenumber" class="form-label">Numer telefon</label>
               <input
                 type="tel"
-                name=""
+                name="phonenumber"
                 id="phonenumber"
                 class="small-input"
                 placeholder="Wpisz numer telefonu"
@@ -676,7 +683,7 @@
               <label for="message" class="form-label required">Wiadomość</label>
               <textarea
                 type="text"
-                name=""
+                name="message"
                 id="message"
                 class="big-input"
                 placeholder="Wpisz wiadomość"
@@ -706,8 +713,8 @@
 
 <!-- 
 
-  3. RWD on this site.
-  4. RWD bankist app.
+  3. fix form by netlify
+  4. mobile filter on project mobile catd
 
 
   

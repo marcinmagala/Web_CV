@@ -114,6 +114,12 @@
   }
 }
 
+@media (max-width: 49em) {
+  .mobile {
+    display: flex;
+  }
+}
+
 /* under 640px */
 
 @media (max-width: 40em) {
@@ -164,6 +170,10 @@
 /* under 448px */
 
 @media (max-width: 28em) {
+  .mobile {
+    font-size: 5rem;
+  }
+
   .nav-links ul {
     gap: 1rem;
     font-size: 1.4rem;
